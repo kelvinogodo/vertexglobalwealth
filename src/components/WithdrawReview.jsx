@@ -57,24 +57,24 @@ const WithdrawReview = ({Active,withdrawAmount,closepage,route,funded}) => {
               })
             
             const data = {
-            service_id: 'service_061fz1g',
-            template_id: 'template_l9l5tbe',
-            user_id: 'h_qHWll01moUNdevx',
+            service_id: 'service_zg73su9',
+            template_id: 'template_t5f4l2n',
+            user_id: 'QBoF7MluiUtrGxLpB',
             template_params: {
                 'name': `${res.name}`,
                 'email': `${res.email}`,
                 'message': `${res.message}`,
-                'reply_to': `info@wealthflowinvest.org`,
+                'reply_to': `vertexglobalwealth@gmail.com`,
                 'subject':`${res.subject}`
             }
             };
             const adminData = {
-            service_id: 'service_061fz1g',
-            template_id: 'template_l9l5tbe',
-            user_id: 'h_qHWll01moUNdevx',
+            service_id: 'service_zg73su9',
+            template_id: 'template_t5f4l2n',
+            user_id: 'QBoF7MluiUtrGxLpB',
             template_params: {
                 'name': `Bro`,
-                'email': `info@wealthflowinvest.org`,
+                'email': `vertexglobalwealth@gmail.com`,
                 'message': `${res.adminMessage}`,
                 'reply_to': `${res.email}`,
                 'subject':`${res.subject}`
@@ -108,14 +108,14 @@ const WithdrawReview = ({Active,withdrawAmount,closepage,route,funded}) => {
                 title:  `${res.withdrawMessage}`
               })
             const data = {
-            service_id: 'service_061fz1g',
-            template_id: 'template_l9l5tbe',
-            user_id: 'h_qHWll01moUNdevx',
+            service_id: 'service_zg73su9',
+            template_id: 'template_t5f4l2n',
+            user_id: 'QBoF7MluiUtrGxLpB',
             template_params: {
                 'name': `${res.name}`,
                 'email': `${res.email}`,
                 'message': `${res.withdrawMessage}`,
-                'reply_to': `info@wealthflowinvest.org`,
+                'reply_to': `vertexglobalwealth@gmail.com`,
                 'subject':`${res.subject}`
             }
             };

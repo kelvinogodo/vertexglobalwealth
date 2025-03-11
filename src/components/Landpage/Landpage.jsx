@@ -43,7 +43,7 @@ const Landpage = () => {
                 </motion.button>
             </motion.div>
               <div className="landpage-img-container">
-                  <motion.img src="/wealtflowlogo1.jpg" alt="" className='phone'
+                  <motion.img src="/landpagepics.jpg" alt="" className='phone'
                     initial={{ y: 45, opacity: 0 }}
                     animate={{y:0, opacity:1}}
                     transition={{duration:0.65,delay:0.6}}/>
@@ -55,4 +55,3 @@ const Landpage = () => {
 }
 
 export default Landpage
-{/* <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=dark&cnt=15&pref_coin_id=1505&graph=yes" width="100%" height="100%" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"> */}

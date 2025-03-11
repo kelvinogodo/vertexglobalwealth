@@ -13,7 +13,7 @@ const About = () => {
             </div>
             <h1 data-aos="fade-up">learn more about vertexglobalwealth</h1>
             <p data-aos="fade-up">
-                vertexglobalwealth is a dynamic platform that capitalizes on global forex trends, real estate opportunities, crude oil ventures, and agricultural investments to deliver optimal returns. We also offer reliable fund management, allowing clients to save securely and access their funds anytime.
+                vertexglobalwealth is a dynamic platform that capitalizes on global forex trends, stocks and ETFs, crypto currency trading and shares to deliver optimal returns. We also offer reliable fund management and copy trading allowing clients to maximise profit,save and access their funds anytime.
             </p>
             <button className='launch-btn launch' data-aos="fade-up" onClick={()=>{
                 navigate('/about')
@@ -23,7 +23,7 @@ const About = () => {
             </button>
         </div>
         <div className="about-img-container">
-            <img src="/office-building.png" data-aos="fade-up" className='about-img'/>
+            <img src="/vertexbuilding.png" data-aos="fade-up" className='about-img'/>
         </div>
         </div>
     </div>

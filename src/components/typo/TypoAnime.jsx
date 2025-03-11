@@ -4,13 +4,13 @@ const TypoAnime = () => {
   return (
        <TypeAnimation
       sequence={[
-        'Agrotech',
+        'cryptocurrencies',
         1000, 
-        'Forex/crypto',
+        'foreign exchange',
         1000,
-        'Real estate',
+        'copy trading',
         1000,
-        'Gold stock',
+        'stocks $ ETFs',
         1000
       ]}
       wrapper="span"

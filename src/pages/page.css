@@ -121,11 +121,11 @@
     color:  var(--dark-mild);
 }
 .distort-container{
-    padding: 0px;
+    padding: 0px !important;
     background-color: #f1f1f1;
 }
 .distort-container:hover{
-    background-color: var(--dark-mild);
+    background-color: var(--dark);
     transition: all .2s ease-in-out;
 }
 .distort-container:hover .counter-distorted svg{
@@ -592,6 +592,15 @@
    }
    .login-page{
     background-color: var(--color-mild);
+   }
+   .realtimechart{
+    padding-bottom: 50px;
+   }
+   .realtimechart h1{
+    color: var(--dark);
+   }
+   .realtimechart p{
+    margin-bottom: 20px;
    }
    @media (max-width: 990px) and (min-width: 768px){
     .widget-container{

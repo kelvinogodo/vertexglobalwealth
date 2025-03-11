@@ -10,24 +10,27 @@ import Faq from '../components/Faq/Faq'
 import Review from '../components/review/Review'
 import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
-import Info from '../components/info/Info'
+import Faqcard from './Faqcard'
+import Copytrade from '../components/copytrade/Copytrade'
 const Home = () => {
   return (
     <main className='home-img'>
-      <Landpage />
+        <Landpage />
         <Feature />
+        <Faqcard />
         <About />
         <Why />
-        <Service />
-        <div className="crypto-chart-container">
+        <div className="crypto-chart-container realtimechart">
         <h1>Crypto Market</h1>
         <p>
-          Buy & Sell Crypto in minutes.
+          Buy & Sell Crypto in minutes. <br />
+          Join our fast-growing crypto exchange for positive results!
         </p>
-        <p>Join our fast-growing crypto exchange for positive results!</p>
           <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=dark&cnt=15&pref_coin_id=1505&graph=yes" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px', backgroundColor:'white'}}></iframe>
-        </div>
+      </div>
+        <Copytrade />
         <Plan />
+        <Service />
         <Roadmap />
         <div className="crypto-chart-container">
         <div className="price-chartt-section home-chart">

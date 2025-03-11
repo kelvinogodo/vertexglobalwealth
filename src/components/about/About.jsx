@@ -11,9 +11,9 @@ const About = () => {
                 <span className="header-line"></span>
                 <h2>about us</h2>
             </div>
-            <h1 data-aos="fade-up">learn more about Wealthflowinvest</h1>
+            <h1 data-aos="fade-up">learn more about vertexglobalwealth</h1>
             <p data-aos="fade-up">
-                WealthFlowInvest is a dynamic platform that capitalizes on global forex trends, real estate opportunities, crude oil ventures, and agricultural investments to deliver optimal returns. We also offer reliable fund management, allowing clients to save securely and access their funds anytime.
+                vertexglobalwealth is a dynamic platform that capitalizes on global forex trends, real estate opportunities, crude oil ventures, and agricultural investments to deliver optimal returns. We also offer reliable fund management, allowing clients to save securely and access their funds anytime.
             </p>
             <button className='launch-btn launch' data-aos="fade-up" onClick={()=>{
                 navigate('/about')

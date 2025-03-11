@@ -19,13 +19,22 @@ const Home = () => {
         <About />
         <Why />
         <Service />
+        <div className="crypto-chart-container">
+        <h1>Crypto Market</h1>
+        <p>
+          Buy & Sell Crypto in minutes.
+        </p>
+        <p>Join our fast-growing crypto exchange for positive results!</p>
+          <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=dark&cnt=15&pref_coin_id=1505&graph=yes" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px', backgroundColor:'white'}}></iframe>
+        </div>
         <Plan />
         <Roadmap />
         <div className="crypto-chart-container">
         <div className="price-chartt-section home-chart">
             <iframe src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px'}}></iframe>
         </div>
-        </div>
+      </div>
+        
         <Review />
         <Faq />
         <Contact />

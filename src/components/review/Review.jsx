@@ -52,7 +52,7 @@ const Review = () => {
               <span className='right-quote'>
                 <ImQuotesLeft />
               </span>
-              <p>I've been investing with Wealthflowinvest for over a year now, and I couldn't be happier with the results. The team's expertise in utilizing IRAs for real estate and cryptocurrencies is truly remarkable. They've not only helped me diversify my investment portfolio but also guided me through the entire process with professionalism and transparency.</p>
+              <p>I've been investing with vertexglobalwealth for over a year now, and I couldn't be happier with the results. The team's expertise in utilizing IRAs for real estate and cryptocurrencies is truly remarkable. They've not only helped me diversify my investment portfolio but also guided me through the entire process with professionalism and transparency.</p>
               <span className="left-quote">
                 <ImQuotesRight />
               </span>
@@ -76,7 +76,7 @@ const Review = () => {
              <span className='right-quote'>
                 <ImQuotesLeft />
               </span>
-              <p>Wealthflowinvest has exceeded my expectations in every way possible. As someone who wanted to explore investment opportunities beyond traditional options, I was initially hesitant. However, the team's in-depth knowledge and personalized approach put my mind at ease. My investments have shown consistent growth, and I feel confident knowing that my financial future is in capable hands. </p>
+              <p>vertexglobalwealth has exceeded my expectations in every way possible. As someone who wanted to explore investment opportunities beyond traditional options, I was initially hesitant. However, the team's in-depth knowledge and personalized approach put my mind at ease. My investments have shown consistent growth, and I feel confident knowing that my financial future is in capable hands. </p>
               <span className="left-quote">
                 <ImQuotesRight />
               </span>
@@ -100,7 +100,7 @@ const Review = () => {
               <span className='right-quote'>
                 <ImQuotesLeft />
               </span>
-              <p>Choosing Wealthflowinvest for my IRA investments was undoubtedly one of the best decisions I've made. The team's deep understanding of both real estate and crypto markets is evident in their well-researched and strategic investment approach. They take the time to explain the intricacies of each investment, ensuring I'm well-informed and comfortable with the decisions being made. </p>
+              <p>Choosing vertexglobalwealth for my IRA investments was undoubtedly one of the best decisions I've made. The team's deep understanding of both real estate and crypto markets is evident in their well-researched and strategic investment approach. They take the time to explain the intricacies of each investment, ensuring I'm well-informed and comfortable with the decisions being made. </p>
               <span className="left-quote">
                 <ImQuotesRight />
               </span>

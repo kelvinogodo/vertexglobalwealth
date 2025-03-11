@@ -19,16 +19,16 @@ const Landpage = () => {
                     transition={{duration:0.65,delay:0.2}}
                 >
                    
-                    Simplify Your Investment Journey in <TypoAnime /> with WealthFlowInvest
+                    Simplify Your Investment Journey in <TypoAnime /> with vertexglobalwealth
                 </motion.h1>
                 <motion.p
                     initial={{y:45, opacity:0}}
                     animate={{y:0, opacity:1}}
                     transition={{duration:0.65,delay:0.4}}
                 >
-                    Wealth Flow Invest empowers you to explore high-growth sectors.
+                    vertexglobalwealth empowers you to explore high-growth sectors.
                     Let us expertly manage your portfolio while you stay focused on your long-term goals. Gain unmatched access to global opportunities and enjoy optimized returns without the hassle.
-                    Partner with Wealth Flow Invest and take control of your financial future today!
+                    Partner with vertexglobalwealth and take control of your financial future today!
                 </motion.p>
                 <motion.button className='launch-btn'
                     initial={{y:45, opacity:0}}

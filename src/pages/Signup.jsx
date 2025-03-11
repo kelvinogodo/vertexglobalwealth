@@ -189,7 +189,7 @@ const Signup = async () => {
           <img src="/wealtflowlogo6.png" alt="" className="signup-logo" onClick={()=>{
               navigate('/')
             }}/>
-              <span class="subtitle">Get started with passive income invest, just create an account and enjoy the experience.</span>
+              <span class="subtitle">Get started with vertexglobalwealth, just create an account and enjoy the experience.</span>
               <div class="input_containers">
                 <label class="input_labels" for="email_field">Firstname</label>
                 <span className="icont">

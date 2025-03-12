@@ -222,9 +222,9 @@ nav ul li a {
     }
 
     .logo-container {
-        width: 70%;
+        width: 90%;
         overflow: hidden;
-        margin-right: auto;
+        margin-left: -80px;
     }
 
     .logo {
@@ -233,6 +233,6 @@ nav ul li a {
     }
 
     header {
-        height: 80px;
+        height: 70px;
     }
 }

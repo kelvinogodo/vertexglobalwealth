@@ -11,9 +11,9 @@ const Plan = () => {
         max:'5,000',
         image:'/btc.png',
         method:'BTC',
-        type:'basic plan',
-        percent:'5',
-        duration:'5 day(s)'
+        type:'starter plan',
+        percent:'20',
+        duration:'2 day(s)'
       },
       {
         id:2,
@@ -21,9 +21,9 @@ const Plan = () => {
         max:'10,000',
         image:'/bnb.png',
         method:'USDT',
-        type:'forex/crypto plan',
-        percent:'15',
-        duration:'6 day(s)'
+        type:'amatuer plan',
+        percent:'40',
+        duration:'4 day(s)'
       },
       {
         id:3,
@@ -31,9 +31,9 @@ const Plan = () => {
         max:'20,000',
         image:'/tron.png',
         method:'tether(TRC20)',
-        type:'agro-tech plan',
-        percent:'20',
-        duration:'7 day(s)'
+        type:'professional plan',
+        percent:'60',
+        duration:'6 day(s)'
       },
       {
         id:4,
@@ -41,8 +41,8 @@ const Plan = () => {
         max:'90,000',
         image:'/tron.png',
         method:'tether(TRC20)',
-        type:'gold-stock plan',
-        percent:'25',
+        type:'golden plan',
+        percent:'80',
         duration:'8 day(s)'
       },
       {
@@ -51,9 +51,9 @@ const Plan = () => {
         max:'5,000,000',
         image:'/tron.png',
         method:'tether(TRC20)',
-        type:'oil and gas plan',
-        percent:'30',
-        duration:'9 day(s)'
+        type:'VIP plan',
+        percent:'100',
+        duration:'10 day(s)'
       },
       {
         id:6,
@@ -61,8 +61,8 @@ const Plan = () => {
         max:'10,000,000',
         image:'/tron.png',
         method:'tether(TRC20)',
-        type:'real estate plan',
-        percent:'35',
+        type:'premium plan',
+        percent:'100',
         duration:'10 day(s)'
       },
       ])

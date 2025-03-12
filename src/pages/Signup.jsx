@@ -186,7 +186,7 @@ const Signup = async () => {
                       e.preventDefault()
                       Signup()
         }} >
-          <img src="/wealtflowlogo6.png" alt="" className="signup-logo" onClick={()=>{
+          <img src="/vertexlogo (1).png" alt="" className="signup-logo" onClick={()=>{
               navigate('/')
             }}/>
               <span class="subtitle">Get started with vertexglobalwealth, just create an account and enjoy the experience.</span>

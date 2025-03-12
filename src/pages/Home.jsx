@@ -26,7 +26,7 @@ const Home = () => {
           Buy & Sell Crypto in minutes. <br />
           Join our fast-growing crypto exchange for positive results!
         </p>
-          <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=dark&cnt=15&pref_coin_id=1505&graph=yes" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px', backgroundColor:'white'}}></iframe>
+          <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=dark&cnt=15&pref_coin_id=1505&graph=yes" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px', backgroundColor:'white', pointerEvents:"none"}}></iframe>
       </div>
         <Copytrade />
         <Plan />

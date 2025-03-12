@@ -5,7 +5,7 @@
     padding: 50px 0px 20px 0px;
 }
 #contact{
-    background-color: var(--secondary-color);
+    background-color: rgb(0, 35, 117);
     width: 100%;
 }
 .contact-card{
@@ -48,7 +48,7 @@
     justify-content: center;
 }
 .contact-p h1{
-    color: var(--mild-color);
+    color:white;
 }
 .contact-p p{
     color: #b7b7b7;

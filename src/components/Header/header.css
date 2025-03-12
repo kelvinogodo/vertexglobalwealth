@@ -117,7 +117,7 @@ nav ul li a {
     display: none;
 }
 
-.menu-modal {
+.menu-card {
     display: none;
 }
 
@@ -235,4 +235,75 @@ nav ul li a {
     header {
         height: 70px;
     }
+        .menu-card {
+            width: 80%;
+            border-radius: 10px;
+            padding: 50px 0px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 100vh;
+            background-color: white;
+            overflow: hidden;
+        }
+    
+        .menu-card .separator {
+            border-top: 1.5px solid #42434a;
+        }
+    
+        .menu-card .list {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 0px 10px;
+        }
+    
+        .menu-card .list .element {
+            display: flex;
+            align-items: center;
+            color: #7e8590;
+            gap: 20px;
+            transition: all 0.3s ease-out;
+            padding: 4px 7px;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+    
+        .menu-card .list .element svg {
+            width: 19px;
+            height: 19px;
+            transition: all 0.3s ease-out;
+        }
+    
+        .menu-card .list .element .label {
+            font-weight: 500;
+            font-size: 1rem;
+        }
+    
+        .menu-card .list .element:hover {
+            background-color: var(--dark);
+            color: #ffffff;
+            transform: translate(1px, -1px);
+        }
+        .menu-card .list .element:hover a{
+            color: white;
+        }
+        .menu-card .list .delete:hover {
+            background-color: var(--dark);
+        }
+    
+        .menu-card .list .element:active {
+            transform: scale(0.99);
+        }
+    
+        .menu-card .list:not(:last-child) .element:hover svg {
+            stroke: #ffffff;
+        }
+    
+        .menu-card .list:last-child .element {
+            color: #7e8590;
+        }
+    
 }

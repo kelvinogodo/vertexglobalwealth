@@ -126,7 +126,7 @@ const login = async () => {
                     login()
                     }}>
           <div class="logo_container" onClick={()=>navigate('/')}>
-            <img src="/wealtflowlogo6.png" alt="" />
+            <img src="/vertexlogo (1).png" alt="" />
           </div>
           <div class="title_container">
             <p class="titles">Login to your Account</p>

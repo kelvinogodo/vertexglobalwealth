@@ -83,8 +83,8 @@ const Plan = () => {
             <div class="pack-header">
               <h3>{withdrawmethod.type}</h3>
               <div class="price-container">
-                <span>%</span>{withdrawmethod.percent}
-                <span>/day</span>
+                {withdrawmethod.percent}
+                <span>%</span>
               </div>
             </div>
             <div>

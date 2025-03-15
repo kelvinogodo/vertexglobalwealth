@@ -28,10 +28,10 @@ const Contact = () => {
         <div className="about-wrapper">
         <div className="why-choose-us-text-container about-text contact-p" >
             <div className="header" data-aos="fade-up">
-                <span className="header-line"></span>
-                <h3>contact us</h3>
+                <span className="header-line contact-line"></span>
+                <h2 className='contact-h1'>contact us</h2>
             </div>
-            <h1 data-aos="fade-up">get in touch</h1>
+            <h1 data-aos="fade-up">keep in touch</h1>
             <p data-aos="fade-up">
                 Any question? Reach out to us and we’ll get back to you shortly.
             </p>
@@ -42,7 +42,7 @@ const Contact = () => {
                 <a href='mailto:vertexglobalwealth@gmail.com' className="ball contact-ball">
                     <FiMail />
                 </a>
-                <a href="https://api.whatsapp.com/send?phone=+19833332992"className="ball contact-ball">
+                <a href="https://api.whatsapp.com/send?phone=19833332992"className="ball contact-ball">
                     <BsWhatsapp />
                 </a>
             </div>

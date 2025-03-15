@@ -600,6 +600,12 @@
    .realtimechart p{
     margin-bottom: 20px;
    }
+   .contact-h1{
+    color: white !important;
+   }
+   .contact-line{
+    background-color: white !important;
+   }
    @media (max-width: 990px) and (min-width: 768px){
     .widget-container{
         width: 100%;

@@ -12,14 +12,17 @@ import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
 import Faqcard from './Faqcard'
 import Copytrade from '../components/copytrade/Copytrade'
+import TradeInfo from '../components/TradeInfo/TradeInfo'
 const Home = () => {
   return (
     <main className='home-img'>
         <Landpage />
         <Feature />
+        <Why />
+        <Copytrade />
+        <TradeInfo />
         <Faqcard />
         <About />
-        <Why />
         <div className="crypto-chart-container realtimechart">
         <h1>Crypto Market</h1>
         <p>
@@ -28,7 +31,7 @@ const Home = () => {
         </p>
           <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=dark&cnt=15&pref_coin_id=1505&graph=yes" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px', backgroundColor:'white', pointerEvents:"none"}}></iframe>
       </div>
-        <Copytrade />
+        
         <Plan />
         <Service />
         <Roadmap />

@@ -8,7 +8,7 @@ const TradeInfo = () => {
   return (
     <section className='tradeInfo-section'>
       <div className="tradeInfo-wrapper">
-        <div class="forex-card">
+        <div class="forex-card" data-aos="fade-up">
           <div class="img">
             <FcComboChart />
           </div>
@@ -19,7 +19,7 @@ const TradeInfo = () => {
             <p class="p">Trading intra-day, daily or weekly provides unique opportunities.</p>
           <div>
         </div></div></div>
-        <div class="forex-card">
+        <div class="forex-card" data-aos="fade-up">
           <div class="img">
             <FcFlowChart />
           </div>
@@ -30,7 +30,7 @@ const TradeInfo = () => {
             <p class="p">24 hours a day, Monday-Saturday only.</p>
           <div>
         </div></div></div>
-        <div class="forex-card">
+        <div class="forex-card" data-aos="fade-up">
           <div class="img">
             <FcAreaChart />
           </div>
@@ -41,17 +41,6 @@ const TradeInfo = () => {
             <p class="p">23 hours a day, Monday-Saturday. Whenever you want to trade.</p>
           <div>
         </div></div></div>
-        {/* <div class="forex-card">
-          <div class="img">
-            <FcDoughnutChart />
-          </div>
-          <div class="textBox">
-            <div class="textContent">
-              <p class="h1">Risk That You Define</p>
-            </div>
-            <p class="p">Know your maximum potential profit or loss up front.</p>
-          <div>
-        </div></div></div> */}
       </div>
     </section>
   )

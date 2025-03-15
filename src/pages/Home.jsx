@@ -23,7 +23,7 @@ const Home = () => {
         <TradeInfo />
         <Faqcard />
         <About />
-        <div className="crypto-chart-container realtimechart">
+        <div className="crypto-chart-container realtimechart" data-aos="fade-up">
         <h1>Crypto Market</h1>
         <p>
           Buy & Sell Crypto in minutes. <br />
@@ -35,7 +35,7 @@ const Home = () => {
         <Plan />
         <Service />
         <Roadmap />
-        <div className="crypto-chart-container">
+        <div className="crypto-chart-container" data-aos="fade-up">
         <div className="price-chartt-section home-chart">
             <iframe src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px'}}></iframe>
         </div>

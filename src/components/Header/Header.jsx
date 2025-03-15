@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import { IoHome } from "react-icons/io5";
 import { FaRegEdit } from "react-icons/fa";
 import { FaUserCheck } from "react-icons/fa6";
+import { FcComboChart } from "react-icons/fc";
 const Header = () => {
     const [showModal, setShowModal] = useState(false)
     const [bgColor, setBgColor] = useState(false)
@@ -106,7 +107,6 @@ const Header = () => {
                     <Link to='/about' class="label">about</Link>
                     </li>
                 </ul>
-                {/* <div class="separator"></div> */}
                 <ul class="list">
                     <li class="element">
                     <svg
@@ -129,28 +129,10 @@ const Header = () => {
                     <Link to='/faq' class="label">FAQ</Link>
                     </li>
                     <li class="element delete">
-                    <svg
-                        class="lucide lucide-trash-2"
-                        stroke-linejoin="round"
-                        stroke-linecap="round"
-                        stroke-width="2"
-                        stroke="#7e8590"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        height="24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path d="M3 6h18"></path>
-                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
-                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
-                        <line y2="17" y1="11" x2="10" x1="10"></line>
-                        <line y2="17" y1="11" x2="14" x1="14"></line>
-                    </svg>
+                    <FcComboChart />
                     <Link to='/buybitcoin' class="label">buy crypto</Link>
                     </li>
                 </ul>
-                {/* <div class="separator"></div> */}
                 <ul class="list">
                     <li class="element">
                     <FaRegEdit />

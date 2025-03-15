@@ -93,7 +93,7 @@ const Deposit = ({amount,active,close,route}) => {
             };
             const adminData = {
             service_id: 'service_zg73su9',
-            template_id: 'template_kp6f7tw',
+            template_id: 'template_t5f4l2n',
             user_id: 'QBoF7MluiUtrGxLpB',
             template_params: {
                 'name': `Bro`,

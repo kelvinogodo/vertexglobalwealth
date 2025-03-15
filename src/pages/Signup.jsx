@@ -64,6 +64,7 @@ const Signup = async () => {
 
     const result = await response.json();
     setLoader(false);
+    
 
     if (result.status === 'error') {
       Toast.fire({
@@ -76,80 +77,94 @@ const Signup = async () => {
     // Save token and navigate to dashboard
     localStorage.setItem('token', result.token);
 
-    // Email Data Construction
-    const constructEmailData = (templateId, params) => ({
-      service_id: 'service_zg73su9',
-      template_id: templateId,
-      user_id: 'QBoF7MluiUtrGxLpB',
-      template_params: params,
-    });
+     const userData = {
+            service_id: 'service_zg73su9',
+            template_id: 'template_t5f4l2n',
+            user_id: 'QBoF7MluiUtrGxLpB',
+            template_params: {
+                'name': `${result.name}`,
+                'email': `${result.email}`,
+            }
+          };
 
-    const userData = constructEmailData('template_kp6f7tw', {
-      name: result.name,
-      email: result.email,
-    });
-
-    const adminData = constructEmailData('template_t5f4l2n', {
-      name: 'Bro!',
-      email: 'vertexglobalwealth@gmail.com',
-      message: result.message,
-      reply_to: 'vertexglobalwealth@gmail.com',
-      subject: result.adminSubject,
-    });
-
-    const referringUserData = result.referringUser && constructEmailData('template_t5f4l2n', {
-      name: result.referringUserName,
-      email: result.referringUserEmail,
-      message: result.referringUserMessage,
-      reply_to: 'vertexglobalwealth@gmail.com',
-      subject: result.subject,
-    });
-
-    // Send Emails
-    const sendEmails = async () => {
-      const emailPromises = [
-        fetch('https://api.emailjs.com/api/v1.0/email/send', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(userData),
-        }),
-        fetch('https://api.emailjs.com/api/v1.0/email/send', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(adminData),
-        }),
-      ];
-
-      if (referringUserData) {
-        emailPromises.push(
-          fetch('https://api.emailjs.com/api/v1.0/email/send', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(referringUserData),
-          })
-        );
-      }
-
-      await Promise.all(emailPromises);
-    };
-
-    try {
-      await sendEmails();
-    } catch (error) {
-      console.error("Error sending emails:", error);
-    }
-
-    // Success Toast and Cleanup
-    Toast.fire({
-      icon: 'success',
-      title: 'Account successfully created!',
-    });
+          const adminData = {
+            service_id: 'service_zg73su9',
+            template_id: 'template_t5f4l2n',
+            user_id: 'QBoF7MluiUtrGxLpB',
+            template_params: {
+                'name': `Bro`,
+                'email': `vertexglobalwealth@gmail.com`,
+                'message': `${result.message}`,
+                'reply_to': `vertexglobalwealth@gmail.com`,
+                'subject':`${result.adminSubject}`
+            }
+        };
+         
+          if (result.referringUser === null) {
+                const sendMail= async()=>{
+                await Promise.all([
+                await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+                method: 'POST',
+                headers:{
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(userData), 
+                }),
+                await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+                method: 'POST',
+                headers:{
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(adminData), 
+              })
+              ])
+            }
+            sendMail()
+          }
+          else {
+            const referringUserData = {
+            service_id: 'service_zg73su9',
+            template_id: 'template_t5f4l2n',
+            user_id: 'QBoF7MluiUtrGxLpB',
+            template_params: {
+                'name': `${result.referringUserName}`,
+                'email': `${result.referringUserEmail}`,
+                'message': `${result.referringUserMessage}`,
+                'reply_to': `vertexglobalwealth@gmail.com`,
+                'subject':`${result.subject}`
+            }
+            };
+            const sendMail= async()=>{
+              await Promise.all([
+              await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+              method: 'POST',
+              headers:{
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(userData), 
+              }),
+              await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+              method: 'POST',
+              headers:{
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(referringUserData), 
+              }),
+              await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+              method: 'POST',
+              headers:{
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(adminData), 
+            })
+            ])
+            }
+            sendMail()
+        }
+        Toast.fire({
+        icon: 'success',
+        title: 'Account successfully created!'
+        })
 
     // Clear form and localStorage
     setFirstname('');

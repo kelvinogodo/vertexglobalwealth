@@ -79,7 +79,7 @@ const Signup = async () => {
 
      const userData = {
             service_id: 'service_zg73su9',
-            template_id: 'template_t5f4l2n',
+            template_id: 'template_kp6f7tw',
             user_id: 'QBoF7MluiUtrGxLpB',
             template_params: {
                 'name': `${result.name}`,

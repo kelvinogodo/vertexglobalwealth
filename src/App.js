@@ -102,15 +102,15 @@ function App() {
               title: `An Investor from ${myArray[Math.floor(Math.random() * num)].country} just withdrew ${myArray[Math.floor(Math.random() * num)].amount}...`
             })
     }, 60000);
-    const route = 'https://vertexbackend-ruddy.vercel.app/'
-    // const route = 'http://localhost:5000'
-    const callCron = async () => {
-      await fetch(`${route}/api/cron`)
-    }
+    // const route = 'https://vertexbackend-ruddy.vercel.app/'
+    const route = 'http://localhost:5000'
+    // const callCron = async () => {
+    //   await fetch(`${route}/api/cron`)
+    // }
   
-    setInterval(() => {
-      callCron()
-    }, 3600000);
+    // setInterval(() => {
+    //   callCron()
+    // }, 3600000);
   
   return (
     <>

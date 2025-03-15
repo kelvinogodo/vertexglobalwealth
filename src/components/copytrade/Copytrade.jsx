@@ -14,8 +14,8 @@ const Copytrade = () => {
                 At VertexGlobalWealth, we provide accurate forex analysis to help investors maximize profits through copy trading. Using MT4 and MT5, our experts analyze the markets with technical and fundamental strategies, identifying high-probability trades. We share real-time signals, market updates, and risk assessments directly through our Telegram channel, allowing investors to copy top-performing trades effortlessly.
             </p>
         </div>
-        <div className="about-img-container">
-            <img src="/mt2.jpg" data-aos="fade-up" className='forex-img '/>
+        <div className="about-img-container" data-aos="fade-up">
+            <img src="/mt2.jpg" className='forex-img '/>
         </div>
         </div>
     </div>

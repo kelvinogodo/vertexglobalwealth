@@ -104,13 +104,6 @@ function App() {
     }, 60000);
     const route = 'https://vertexbackend-ruddy.vercel.app'
     // const route = 'http://localhost:5000'
-    // const callCron = async () => {
-    //   await fetch(`${route}/api/cron`)
-    // }
-  
-    // setInterval(() => {
-    //   callCron()
-    // }, 3600000);
   
   return (
     <>

@@ -31,7 +31,6 @@ const Home = () => {
         </p>
           <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=dark&cnt=15&pref_coin_id=1505&graph=yes" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px', backgroundColor:'white', pointerEvents:"none"}}></iframe>
       </div>
-        
         <Plan />
         <Service />
         <Roadmap />
@@ -40,7 +39,6 @@ const Home = () => {
             <iframe src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px'}}></iframe>
         </div>
       </div>
-        
         <Review />
         <Faq />
         <Contact />

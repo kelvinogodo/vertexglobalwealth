@@ -51,29 +51,30 @@ const Login = ({route}) => {
   })
   
   
-const login = async () => {
-  try {
-    setLoader(true);
+  const login = async () => {
+    try {
+      setLoader(true);
 
-    // Make a POST request using axios
-    const request = await axios.post(
-      `${route}/api/login`,
-      {
-        email,
-        password,
-        rememberme: check,
-      },
-      {
-        headers: { 'Content-Type': 'application/json' },
-      }
-    );
+      // Make a POST request using axios
+      const request = await axios.post(
+        `${route}/api/login`,
+        {
+          email,
+          password,
+          rememberme: check,
+        },
+        {
+          headers: { 'Content-Type': 'application/json' },
+        }
+      );
+    
 
     // Destructure the response data
     const { status, token } = request.data;
-    console.log(`${status} ${token}`)
+    
 
     if (status === 'ok' && token) {
-      // Save the token to localStorage
+    //   // Save the token to localStorage
       localStorage.setItem('token', token);
 
       Toast.fire({
@@ -89,7 +90,7 @@ const login = async () => {
         icon: 'error',
         title: 'Error! Email not verified',
       });
-    } else if (status === 404) {
+    } else if (status === 401) {
       Toast.fire({
         icon: 'warning',
         title: 'Warning! Incorrect password',

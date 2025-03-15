@@ -27,7 +27,7 @@ const TradeInfo = () => {
             <div class="textContent">
               <p class="h1">Trading Around the Clock</p>
             </div>
-            <p class="p">24 hours a day, Monday-Saturday only.</p>
+            <p class="p">24 hours a day, Monday-Saturday only, using mt4 and mt5.</p>
           <div>
         </div></div></div>
         <div class="forex-card" data-aos="fade-up">
@@ -38,7 +38,7 @@ const TradeInfo = () => {
             <div class="textContent">
               <p class="h1">Active Markets</p>
             </div>
-            <p class="p">23 hours a day, Monday-Saturday. Whenever you want to trade.</p>
+            <p class="p">23 hours a day, Monday-Saturday. Whenever you want to trade,using mt4 and mt5.</p>
           <div>
         </div></div></div>
       </div>

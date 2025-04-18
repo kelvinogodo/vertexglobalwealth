@@ -3,7 +3,7 @@ import Userdashboardheader from './userdashboardheader/Userdashboardheader'
 import Deposit from './Deposit'
 import { useNavigate } from 'react-router-dom'
 import {AiOutlineArrowLeft} from 'react-icons/ai'
-const Checkout = ({Active,depositAmount,closepage,route}) => {
+const Checkout = ({Active,depositAmount,closepage,route,method,network}) => {
     const [checkout,setCheckout] = useState(true)
     const [active,setActive] = useState(Active)
     const [deposit,setDeposit] = useState(false)
@@ -64,7 +64,7 @@ const Checkout = ({Active,depositAmount,closepage,route}) => {
         }
         {
             deposit && 
-            <Deposit amount={amount} active={active} close={close} route={route}/>
+              <Deposit amount={amount} active={active} close={close} route={route} method={ method} network={network} />
         }
     </>
     

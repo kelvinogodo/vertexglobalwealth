@@ -22,6 +22,7 @@ const Userdashboardfundaccount = ({route}) => {
   const [checkoutPage,setCheckoutPage] = useState(false)
   const [showModal,setShowModal] =useState(false)
   const [activeMethod, setActiveMethod] = useState()
+  const [activeNetwork, setActiveNetwork] = useState()
   const [withdrawMethods,setWithdrawalMethods] = useState([
     {
       id:1,
@@ -29,7 +30,8 @@ const Userdashboardfundaccount = ({route}) => {
       max:1000,
       image:'/btc.png',
       method:'BTC',
-      wallet:'bc1qdvsxlsm2fz4rdsj85l6t584fptqaq0wuz20tpr',
+      wallet: 'bc1qdvsxlsm2fz4rdsj85l6t584fptqaq0wuz20tpr',
+      network:'btc'
     },
     {
       id:2,
@@ -37,7 +39,8 @@ const Userdashboardfundaccount = ({route}) => {
       max:1000,
       image:'/etherium.png',
       method:'ETH',
-      wallet:'0xac3F0d84E546da3D2aadC15F6F048c9c715E1347'
+      wallet: '0xac3F0d84E546da3D2aadC15F6F048c9c715E1347',
+      network:'ERC20'
     },
     {
       id:3,
@@ -45,7 +48,8 @@ const Userdashboardfundaccount = ({route}) => {
       max:1000,
       image:'/tron.png',
       method:'tether(TRC20) ',
-      wallet:'TSwQjEF2nR1T5uWEEMKKvGMCkDMuB3zfsP'
+      wallet: 'TSwQjEF2nR1T5uWEEMKKvGMCkDMuB3zfsP',
+      network:'TRC20'
     },
     {
       id:4,
@@ -53,7 +57,8 @@ const Userdashboardfundaccount = ({route}) => {
       max:1000,
       image:'/solana.png',
       method:'Solana (SOL) ',
-      wallet:'AiFqDAKVaJsFvHBy12pohJjCcjGVx6EKHekFFAbt7Esx'
+      wallet: 'AiFqDAKVaJsFvHBy12pohJjCcjGVx6EKHekFFAbt7Esx',
+      network:'sol'
     },
   ])
 
@@ -177,7 +182,8 @@ const Userdashboardfundaccount = ({route}) => {
                           max:`${withdrawmethod.max}`,
                           image:`${withdrawmethod.image}`,
                           method:`${withdrawmethod.method}`,
-                          wallet:`${withdrawmethod.wallet}`
+                          wallet:`${withdrawmethod.wallet}`,
+                          network:`${withdrawmethod.network}`,
                         })
                         setShowModal(true)
                       }}>deposit</button>
@@ -216,7 +222,8 @@ const Userdashboardfundaccount = ({route}) => {
                           max:`${withdrawmethod.max}`,
                           image:`${withdrawmethod.image}`,
                           method:`${withdrawmethod.method}`,
-                          wallet:`${withdrawmethod.wallet}`
+                          wallet: `${withdrawmethod.wallet}`,
+                          network:`${withdrawmethod.network}`,
                         })
                         setShowModal(true)
                       }}>deposit</button>
@@ -235,7 +242,7 @@ const Userdashboardfundaccount = ({route}) => {
     </div>}
     {
         checkoutPage &&
-        <Checkout Active={activeMethod} depositAmount={depositAmount} closepage={close} route={route}/>
+        <Checkout Active={activeMethod} depositAmount={depositAmount} closepage={close} route={route} method={ activeMethod} network={activeNetwork} />
     }
     </> 
   )
